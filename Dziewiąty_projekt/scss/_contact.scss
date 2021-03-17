@@ -1,0 +1,93 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    &__headline-container {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    &__small-headline {
+        font-size: 18px;
+    }
+
+    .info {
+
+        .map-container {
+            overflow: hidden;
+        }
+
+        &__user {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+
+            &-name {
+                font-weight: bold;
+                font-size: 17px;
+            }
+
+            &-my-name {
+                color: rgb(104, 104, 104);
+            }
+
+            &-name,
+            &-my-name {
+                margin: auto 20px;
+                font-size: 15px;
+            }
+
+            &-img {
+                color: rgb(81, 134, 248);
+            }
+        }
+    }
+
+    .form {
+
+        &__text {
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        &__container {
+            position: relative;
+            
+            &:nth-child(1) {
+                margin-right: 15px;
+            }
+        }
+
+        &__label {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-80%);
+            padding: 0 5px;
+            color: gray;
+            cursor: auto;
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        &__input {
+            border-radius: 5px;
+            padding: 8px 20px;
+            border: 1px solid gray;
+            margin-bottom: 15px;
+            outline: none;
+            transition: 0.3s;
+
+            &:focus ~ .form__label,
+            &:valid ~ .form__label {
+                transform: translate(-5px, -40px);
+                background-color: white;
+            }
+        }
+
+        &__btn {
+            width: 150px;
+        }
+    }
+}

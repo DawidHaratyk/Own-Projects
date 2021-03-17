@@ -1,0 +1,14 @@
+.footer {
+    background-color: black;
+    text-align: center;
+
+    &__text {
+        color: white;
+        padding: 20px 0;
+        margin-bottom: 0;
+    }
+
+    &__strong {
+        color: var(--blue);
+    }
+}

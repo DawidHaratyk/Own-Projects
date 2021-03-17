@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: royalblue;
+    --white: white;
+    --white-font: rgb(228, 237, 241);
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+    .btn {
+        padding: 10px 15px;
+        background-color: var(--blue);
+        border: 1px solid white;
+        border-radius: 6px;
+        color: white;
+        outline: none;
+        font-size: 18px;
+        cursor: pointer;
+        width: 180px;
+        transition: 0.3s; 
+
+        &:hover {
+            background-color: var(--white);
+            color: var(--blue);
+            border: 1px solid var(--blue);
+        }
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 46px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    ol,
+    ul {
+        padding: 0;
+    }
+}
+
+.lines-container {
+    position: relative;
+    width: 122px;
+    margin: 0 auto;
+}
+
+.left-line {
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: rgb(69, 69, 238);
+}
+
+.right-line {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: rgb(69, 69, 238);
+}
+
+.animated-value {
+    transform: translate(-10px, -15px);
+}

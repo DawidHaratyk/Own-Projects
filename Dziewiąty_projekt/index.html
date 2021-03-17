@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja wizytówka</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="home" id="home">
+        <nav class="menu">
+            <h2 class="menu__title display-3">Port<strong class="menu__strong display-3">folio</strong></h2>
+
+            <div class="icons-container">
+                <div class="menu__cross menu__icon">
+                    <span class="menu__cross-line"></span>
+                    <span class="menu__cross-line"></span>
+                </div>
+                <i class="fas fa-bars home__bars menu__icon"></i>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#home" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#about" class="menu__link">O mnie</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#tech" class="menu__link">Technologie</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#contact" class="menu__link">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="home__content col-12 col-md-6">
+                    <p class="home__text">Cześć, mam na imię</p>
+                    <h1 class="home__my-name">Dawid Haratyk</h1>
+                    <h2 class="home__am">I jestem
+                        <span class="home__typing"></span>
+                        <span class="home__am-cursor">|</span>
+                    </h2>
+                    <button class="home__btn btn">Więcej o mnie</button>
+                </div>
+
+                <div class="home__img-container d-flex justify-content-center col-12 col-md-6">
+                    <img src="./images/Nowy_projekt.png" alt="" class="home__img">
+                    <p class="home__icon-text">original</p>
+                    <p class="home__icon-text">original</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="about">
+        <main class="about">
+            <div class="about__headline-container">
+                <h2 class="about__me-headline">O mnie</h2>
+                <div class="lines-container">
+                    <span class="left-line"></span>
+                    <p class="about__text about__small-headline">kim jestem</p>
+                    <span class="right-line"></span>
+                </div>
+            </div>
+            <div class="row about__container">
+                <img src="./images/158000223_940697006470573_1043453356416025246_n.jpg" alt="" class="about__img col-md-6">
+
+                <div class="about__content col-md-6">
+                    <h3 class="about__headline">Jestem Dawid...</h3>
+                    <p class="about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nesciunt accusamus fuga. Possimus praesentium, reiciendis, nostrum incidunt ullam voluptas laboriosam explicabo iure ducimus, vel perferendis vitae natus impedit dolorem minima?Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="about__btn btn">Moje CV</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="tech" id="tech">
+        <div class="container">
+            <div class="tech__headline-container">
+                <h2 class="tech__me-headline">Technologie</h2>
+                <div class="lines-container">
+                    <span class="left-line tech__left-line"></span>
+                    <p class="tech__small-headline">których używam</p>
+                    <span class="right-line tech__right-line"></span>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around">
+                <section class="card tech__item d-flex flex-column justify-content-center col-10 offset-xs-1 col-md-3 offset-md-0">
+                    <img src="./images/htmlGraphix.png" alt="" class="tech__img">
+                    <p class="tech__text">HTML (ang. HyperText Markup Language) – hipertekstowy język znaczników, wykorzystywany do tworzenia dokumentów hipertekstowych.</p>
+                </section>
+                <section class="card tech__item d-flex flex-column justify-content-center col-10 offset-xs-1 col-md-3 offset-md-0">
+                    <img src="./images/js.png" alt="" class="tech__img">
+                    <p class="tech__text">Kaskadowe arkusze stylów (ang. Cascading Style Sheets, w skrócie CSS) – język służący do opisu formy prezentacji (wyświetlania) stron WWW.</p>
+                </section>
+                <section class="card tech__item d-flex flex-column justify-content-center col-10 offset-xs-1 col-md-3 offset-md-0">
+                    <img src="./images/css3.png" alt="" class="tech__img">
+                    <p class="tech__text">JavaScript, w skrócie JS – skryptowy język programowania, stworzony przez firmę Netscape, najczęściej stosowany na stronach internetowych.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <div class="contact">
+            <div class="contact__headline-container">
+                <h2 class="contact__me-headline">Kontakt</h2>
+                <div class="lines-container">
+                    <span class="left-line contact__left-line"></span>
+                    <p class="contact__small-headline">informacje</p>
+                    <span class="right-line contact__right-line"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="info col-12 col-md-6">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2579.764615795051!2d18.81559055160578!3d49.71523297927944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47141bf4c6e5f40f%3A0x7024f75bc011b96d!2sHutnicza%2C%2043-450%20Ustro%C5%84!5e0!3m2!1spl!2spl!4v1615918156684!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <div class="info__data">
+                        <div class="info__user">
+                            <i class="fas fa-user-alt info__user-img"></i>
+                            <div class="name-container">
+                                <p class="info__user-name">Name</p>
+                                <p class="info__user-my-name">Dawid Haratyk</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info__data">
+                        <div class="info__user">
+                            <i class="fas fa-map-marker-alt info__user-img"></i>
+                            <div class="name-container">
+                                <p class="info__user-name">Address</p>
+                                <p class="info__user-my-name">Ustroń, Hutnicza</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info__data">
+                        <div class="info__user">
+                            <i class="fas fa-envelope info__user-img"></i>
+                            <div class="name-container">
+                                <p class="info__user-name">Email</p>
+                                <p class="info__user-my-name">dharatyk@onet.pl</p>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+
+                <form class="form col-12 col-md-6">
+                    <p class="form__text">Napisz do mnie</p>
+                    <div class="row d-flex justify-content-flex-start g-0">
+                        <div class="form__container col-12 col-md-5">
+                            <input type="text" class="form__input col-12" required>
+                            <label for="" class="form__label">Imię</label>
+                        </div>
+                        <div class="form__container col-12 col-md-6">
+                            <input type="text" class="form__input col-12" required>
+                            <label for="" class="form__label">Nazwisko</label>
+                        </div>
+                    </div>
+                    <div class="form__container col-12">
+                        <input type="text" class="form__input col-12" required>
+                        <label for="" class="form__label">Temat</label>
+                    </div>
+                    <div class="form__container col-12">
+                        <input type="text" class="form__input form__large-input col-12" required>
+                        <label for="" class="form__label">Wiadomość</label>
+                    </div>
+                    <button type="submit" class="form__btn btn">Wyślij</button>
+                </form>
+            </div>
+        </div>
+    </div>  
+
+
+        <footer class="footer">
+            <p class="footer__text">Strona stworzona przez <strong class="footer__strong">Dawida Haratyka</strong> |  © 2021 Wszystkie prawa zastrzeżone</p>
+        </footer>
+
+    
+    <script src="https://kit.fontawesome.com/866fce4fcb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

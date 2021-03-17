@@ -1,0 +1,61 @@
+.tech {
+    margin: 50px auto;
+    padding: 40px 0;
+    background-color: black;
+    color: white;
+
+    &__me-headline {
+        text-align: center;
+    }
+
+    &__img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__item {
+        background-color: rgba(202, 202, 202, 0.6);
+        margin-bottom: 20px;
+        padding: 20px;
+        box-shadow: 0 0 6px 3px white;
+        transition: 0.3s;
+
+        &:hover {
+            transform: translateY(-15px);
+        }
+    }
+
+    &__item:nth-child(1),
+    &__item:nth-child(3) {
+        &:hover {
+            transform: translateY(15px);
+        }
+
+        @media(min-width: 768px) {
+            transform: translateY(30px);
+        }
+    }
+
+    &__small-headline {
+        width: 150px;
+        margin: 0 0 30px 0;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    &__text {
+        text-align: center;
+        line-height: 170%;
+        margin-top: 15px;
+    }
+
+    &__left-line {
+        top: 50%;
+        left: -53px;
+    }
+
+    &__right-line {
+        top: 50%;
+        left: calc(124%);
+    }
+}
